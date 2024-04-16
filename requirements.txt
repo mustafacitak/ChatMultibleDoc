@@ -1,0 +1,15 @@
+langchain==0.0.147
+PyPDF2==3.0.1
+python-dotenv==1.0.0
+streamlit==1.22.0
+faiss-cpu==1.7.4
+streamlit-extras
+altair<5
+openai==0.27.6
+tiktoken
+azure-identity==1.13.0
+azure-keyvault-secrets==4.7.0
+pandas
+python-docx
+openpyxl
+xlrd
