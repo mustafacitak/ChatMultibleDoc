@@ -19,11 +19,9 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 
 Repoyu klonlayın:
 bash
-Copy code
 git clone https://github.com/your_username/your_project.git
 Proje dizinine gidin:
 bash
-Copy code
 cd your_project
 Gerekli Python paketlerini yükleyin:
 bash
