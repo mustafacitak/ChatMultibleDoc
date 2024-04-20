@@ -1,3 +1,5 @@
 .env
 .streamlit/
 .pkl
+vector_base.pkl
+.venv
