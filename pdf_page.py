@@ -4,19 +4,16 @@ import pandas as pd
 import docx
 from PyPDF2 import PdfReader
 import pickle
+from streamlit_pdf_viewer import pdf_viewer
+from dotenv import load_dotenv, dotenv_values
 from langchain.chat_models import ChatOpenAI
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.chains.question_answering import load_qa_chain
-from streamlit_pdf_viewer import pdf_viewer
 
-os.environ["OPENAI_API_KEY"] = "sk-proj-ugbMH2Kt5r4gSJCGsHFQT3BlbkFJhIaQPQ7uIVBmx7fdR96H"
-openai_api_key = os.getenv("OPENAI_API_KEY")
-if openai_api_key:
-    os.environ["OPENAI_API_KEY"] = openai_api_key
-else:
-    st.error("OpenAI API key is missing. Please make sure to set it in your .env file.")
+load_dotenv()
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 # Vektör tabanı ve chat modelini bir kez yükle
 text_splitter = RecursiveCharacterTextSplitter(
@@ -24,11 +21,9 @@ text_splitter = RecursiveCharacterTextSplitter(
     chunk_overlap=20,
     length_function=len
 )
-
 embeddings = OpenAIEmbeddings()
 llm = ChatOpenAI(temperature=0.07, model_name="gpt-3.5-turbo")
 chain = load_qa_chain(llm=llm, chain_type="stuff")
-
 
 def pdf_page():
     column1, column2 = st.columns(2)
@@ -101,6 +96,7 @@ def pdf_page():
                         query=query, k=k, distances=distances, labels=labels)
 
                     # Chat modelinin yüklenmesi ve dokümanla konuşulması
+
                     response = chain.run(input_documents=docs, question=query)
                     st.divider()
                     st.subheader("Cevap: ")
