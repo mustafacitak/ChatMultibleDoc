@@ -3,4 +3,4 @@
 .pkl
 vector_base.pkl
 .venv
-__pycache__
+__pycache__/

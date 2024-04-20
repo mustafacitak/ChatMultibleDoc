@@ -16,6 +16,7 @@ def login():
         if username in user_credentials and user_credentials[username] == password:
             st.session_state.is_logged_in = True
             st.success("Giriş Başarılı!")
+            st.experimental_rerun()
         else:
             st.error("Yanlış Kullanıcı Adı veya Parola.")
 
