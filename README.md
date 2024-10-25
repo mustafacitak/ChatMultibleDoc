@@ -60,10 +60,15 @@ First, ensure all dependencies are installed using:
 pip install -r requirements.txt
 ```
 
-### 1. Run the Application
-First, ensure all dependencies are installed using:
+### 2. Run the Application
+Start the application using Streamlit:
 ```bash
 streamlit run main.py
+```
+### 3. Create a .env File
+To securely store your API key and integrate it into the project, you need to create a .env file in the root directory of your project. Add your OpenAI API key in the following format:
+```bash
+OPENAI_API_KEY=your_openai_api_key_here
 ```
 
 ## ⚠️ Known Limitations
