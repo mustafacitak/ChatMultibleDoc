@@ -1,11 +1,11 @@
 import streamlit as st
-from pdf_page import pdf_page
+from document_page import document_page
 
 # Örnek kullanıcı adları ve parolaları
 user_credentials = {
     "1": "1",
-    "ecemturan@vaneli.com": "ecem123",
-    "mike@example.com": "mike789"
+    "iletisim@cunsultech.com": "consultechai123",
+    "iletisi2m@cunsultech.com": "consultechai1234"
 }
 
 def login():
@@ -27,7 +27,7 @@ def main():
     if not st.session_state.is_logged_in:
         login()
     else:
-        pdf_page()
+        document_page()
 
 if __name__ == "__main__":
     main()
