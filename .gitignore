@@ -5,3 +5,4 @@ vector_base.pkl
 .venv
 __pycache__/
 .DS_Store
+.idea/
