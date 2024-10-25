@@ -43,7 +43,7 @@ This project builds an interactive chatbot application using Streamlit and the L
 ### Login Screen
 
 <div align="center">
-  <img src="images/login.png" alt="login Interface">
+  <img src="images/login.png" alt="login Interface" width="500">
 </div>
 
 ### Streamlit
