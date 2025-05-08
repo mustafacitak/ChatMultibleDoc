@@ -4,8 +4,8 @@ from document_page import document_page
 # Örnek kullanıcı adları ve parolaları
 user_credentials = {
     "1": "1",
-    "iletisim@cunsultech.com": "consultechai123",
-    "iletisi2m@cunsultech.com": "consultechai1234"
+    "mail_adress@mail.com": "mail123",
+    "mail_adress@mail.com": "mail123",
 }
 
 def login():
