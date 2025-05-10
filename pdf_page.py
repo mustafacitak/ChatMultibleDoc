@@ -36,8 +36,8 @@ def pdf_page():
             }
         </style>
         """, unsafe_allow_html=True)
-    vanelli_logo = "./images/vanelli.svg"
-    st.sidebar.image(vanelli_logo, width=200)
+    logo = "./images/v.svg"
+    st.sidebar.image(logo, width=200)
     uploadedFiles = st.sidebar.file_uploader("", type=['pdf', '.csv', '.xlsx', '.xls', '.docx'],
                                              accept_multiple_files=True)
 

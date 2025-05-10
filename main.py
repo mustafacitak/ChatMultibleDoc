@@ -4,7 +4,7 @@ from pdf_page import pdf_page
 # Örnek kullanıcı adları ve parolaları
 user_credentials = {
     "1": "1",
-    "ecemturan@vaneli.com": "ecem123",
+    "cherry@example.com": "cherry123",
     "mike@example.com": "mike789"
 }
 
