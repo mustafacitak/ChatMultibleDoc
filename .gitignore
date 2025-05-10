@@ -1,6 +1,61 @@
+# .env dosyasını Git'e dahil etme
 .env
-.streamlit/
-.pkl
-vector_base.pkl
-.venv
+
+# Git'e dahil edilmeyecek dosyalar ve klasörler
+
+# Ortam değişkenleri ve gizli anahtarlar
+*.env
+.env.*
+*.pem
+*.key
+
+# Veritabanı klasörleri
+db/
+*/db/
+**/db/
+*.db
+*.sqlite3
+**/chroma.sqlite3
+
+# Python sanal ortam klasörleri
+venv/
+.venv/
+virtualenv/
+*venv/
+*virtualenv/
+ENV/
+env/
+python-env/
+
+# Python ve cache ile ilgili
 __pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE klasörleri
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Log dosyaları
+*.log
+logs/
