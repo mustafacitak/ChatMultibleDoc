@@ -1,7 +1,7 @@
 import os
-from typing import Optional
+from typing import Optional, List, Dict
 import yaml
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_google_genai import ChatGoogleGenerativeAI, HarmCategory, HarmBlockThreshold
 from utils.config import MODEL_NAME, get_api_key
 from langchain_core.language_models import BaseChatModel
 
@@ -16,7 +16,7 @@ def load_system_prompts(file_path: str = "config/system_prompt.yaml") -> dict:
     except Exception as e:
         raise Exception(f"System promptları yüklenirken hata: {str(e)}")
 
-def get_llm(temperature: float = 0.7, system_prompt: Optional[str] = None) -> BaseChatModel:
+def get_llm(temperature: float = 0.3, system_prompt: Optional[str] = None, safety_settings: Optional[Dict] = None) -> BaseChatModel:
     """
     LangChain ile Gemini modeline erişim sağlayan bir LLM nesnesi döndürür.
     API anahtarı .env dosyasından alınır.
@@ -24,6 +24,7 @@ def get_llm(temperature: float = 0.7, system_prompt: Optional[str] = None) -> Ba
     Args:
         temperature: Modelin yaratıcılık seviyesini belirleyen sıcaklık parametresi
         system_prompt: İsteğe bağlı sistem prompt
+        safety_settings: Gemini modelinin safety ayarları
         
     Returns:
         LangChain uyumlu bir ChatModel nesnesi
@@ -38,11 +39,23 @@ def get_llm(temperature: float = 0.7, system_prompt: Optional[str] = None) -> Ba
         if not api_key:
             print("Google API anahtarı bulunamadı! get_llm() fonksiyonunda yerel bir model kullanmayı düşünebilirsiniz.")
         
+        # Varsayılan safety ayarlarını tanımla (eğer kullanıcı tarafından belirtilmemişse)
+        default_safety_settings = {
+            HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
+            HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
+            HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
+            HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE
+        }
+        
+        # Kullanıcı tarafından sağlanan ayarlar veya varsayılan ayarları kullan
+        safety_settings = safety_settings or default_safety_settings
+        
         # LLM'i başlat
         llm = ChatGoogleGenerativeAI(
             model=MODEL_NAME,
             temperature=temperature,
-            convert_system_message_to_human=True  # Gemini ile daha iyi çalışabilir
+            convert_system_message_to_human=True,  # Gemini ile daha iyi çalışabilir
+            safety_settings=safety_settings
         )
         print(f"Google Gemini LLM başlatıldı: {MODEL_NAME}")
         return llm

@@ -4,7 +4,7 @@ import unicodedata
 from typing import List, Optional, Dict, Any
 from langchain_core.documents import Document
 from langchain_core.embeddings import Embeddings
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from utils.config import DB_PATH
 
 def normalize_collection_name(name: str) -> str:
@@ -94,7 +94,8 @@ def create_or_update_collection(
         
         # Belgeleri ekle
         vectordb.add_documents(documents)
-        vectordb.persist()
+        # Artık persist metodunu kullanmıyoruz
+        # ChromaDB 0.4.x+ ile otomatik olarak kaydediliyor
         
         return vectordb
         
@@ -106,7 +107,7 @@ def create_or_update_collection(
             collection_name=normalized_collection_name,
             persist_directory=persist_directory
         )
-        vectordb.persist()
+        # Artık persist metodunu kullanmıyoruz
         
         return vectordb
 

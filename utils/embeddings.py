@@ -1,7 +1,7 @@
 import os
 import time
 from typing import List, Optional, Dict, Any
-from langchain_community.embeddings import SentenceTransformerEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.embeddings import Embeddings
 
 # CacheBackedEmbeddings değişmiş olabilir, o yüzden şimdi kendi basit önbelleğimizi kullanacağız
@@ -115,7 +115,10 @@ def get_local_embeddings() -> Embeddings:
     """
     model_name = "paraphrase-multilingual-MiniLM-L12-v2"
     print(f"SentenceTransformer embedding modeli yükleniyor: {model_name}")
-    return SentenceTransformerEmbeddings(model_name=model_name)
+    
+    # HuggingFaceEmbeddings sınıfını kullanıyoruz (langchain-huggingface'den)
+    # model_name parametresi ile SentenceTransformer modelini belirtiyoruz
+    return HuggingFaceEmbeddings(model_name=model_name)
 
 def get_cached_embeddings(embedding_model: Embeddings) -> SimpleCachedEmbeddings:
     """

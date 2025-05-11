@@ -1,6 +1,6 @@
-# DocChat - Belge Analiz ve Sohbet Sistemi
+# DoChat - Belge Analiz ve Sohbet Sistemi
 
-DocChat, belgelerinizi yapay zeka ile analiz etmenizi ve sohbet etmenizi sağlayan LangChain ve Streamlit tabanlı bir RAG (Retrieval-Augmented Generation) uygulamasıdır.
+DoChat, belgelerinizi yapay zeka ile analiz etmenizi ve sohbet etmenizi sağlayan LangChain ve Streamlit tabanlı bir RAG (Retrieval-Augmented Generation) uygulamasıdır.
 
 ## Özellikler
 
@@ -70,6 +70,12 @@ streamlit run app.py
    - "Sohbet" sayfasında belgeleriniz hakkında sorular sorun
    - "Ayarlar" sayfasından sistem promptlarını özelleştirin
 
+## Sistem Mimarisi
+
+DocChat uygulaması, aşağıdaki diyagramda gösterildiği gibi bir RAG (Retrieval-Augmented Generation) mimarisi kullanmaktadır:
+
+![DocChat RAG Mimarisi](diagram.png)
+
 ## Teknolojiler
 
 - **LangChain**: RAG mimarisi için temel çerçeve
@@ -109,4 +115,4 @@ Sorular, öneriler veya geri bildirimler için: example@example.com
 
 ---
 
-DocChat v1.0 | RAG Tabanlı Doküman Analiz Sistemi
+DoChat v0.2 | RAG Tabanlı Doküman Analiz Sistemi
