@@ -1,0 +1,10 @@
+prompt: |
+  Kullanıcıdan gelen sorgu: '{query}'
+
+  1. Sorgudaki tüm yazım, dil bilgisi ve noktalama hatalarını düzelt.
+  2. Sorgu çok kısa, belirsiz veya eksikse, daha açık, detaylı ve anlamlı hale getir. Gerekirse eksik bilgileri tamamla veya daha açıklayıcı bir şekilde yeniden yaz.
+  3. Sorgunun anlamını, amacını veya bağlamını değiştirme. Sadece daha iyi, net ve profesyonel bir Türkçe ile ifade et.
+  4. Sorgunun kullanıcı tarafından bir yapay zekâya veya asistan sisteme yöneltildiğini varsayarak, doğal ve anlaşılır bir soru cümlesi haline getir.
+  5. Eğer sorgu çok genel veya tek kelimeden oluşuyorsa, kullanıcının asıl niyetini tahmin ederek daha açıklayıcı bir hale getir. Ancak asla yeni bilgi ekleme, sadece mevcut anlamı güçlendir.
+
+  Sadece iyileştirilmiş ve düzeltilmiş yeni sorguyu döndür. Açıklama, gerekçe veya ek bilgi ekleme. Yanıtın yalnızca Türkçe ve tek satır olmalı. 

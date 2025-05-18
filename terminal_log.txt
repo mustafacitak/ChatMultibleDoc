@@ -1,0 +1,368 @@
+2025-05-18 22:55:28.120 | INFO     | __page__:<module>:31 - Adaptive-RAG system enabled.
+2025-05-18 22:55:28.141 | INFO     | __page__:<module>:40 - FUNNELRAG (Two-Stage Retrieval) system enabled.
+2025-05-18 22:55:28.141 | INFO     | __page__:<module>:49 - Binary Quantization system enabled.
+2025-05-18 22:55:28.141 | INFO     | __page__:<module>:64 - Cached RAG system enabled.
+2025-05-18 22:56:25.776 | INFO     | __page__:load_or_create_config:308 - Config yüklendi: db/collections/version_03/config.json
+2025-05-18 22:56:25.777 | INFO     | utils.chunking_utils:sentence_chunking:41 - 91 adet cümle chunk üretildi.
+2025-05-18 22:56:25.780 | INFO     | utils.duplicate_utils:get_duplicate_threshold_from_config:96 - Duplikasyon eşik değeri: 0.8
+2025-05-18 22:56:26.493 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:26.527 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:26.534 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 1 vektör ile karşılaştırılıyor
+2025-05-18 22:56:26.537 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6821 (Eşik: 0.8000)
+2025-05-18 22:56:26.537 | INFO     | utils.embedding_utils:generate_embedding:25 - Embedding önbellekten alındı.
+2025-05-18 22:56:26.537 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 2 vektör ile karşılaştırılıyor
+2025-05-18 22:56:26.542 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.8002 (Eşik: 0.8000)
+2025-05-18 22:56:26.542 | INFO     | __page__:process_and_add_to_collection:453 - Semantic duplicate detected by embedding and skipped.
+2025-05-18 22:56:26.565 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:26.572 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 2 vektör ile karşılaştırılıyor
+2025-05-18 22:56:26.577 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7390 (Eşik: 0.8000)
+2025-05-18 22:56:26.592 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:26.599 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 3 vektör ile karşılaştırılıyor
+2025-05-18 22:56:26.606 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7735 (Eşik: 0.8000)
+2025-05-18 22:56:26.622 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:26.629 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 4 vektör ile karşılaştırılıyor
+2025-05-18 22:56:26.638 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7820 (Eşik: 0.8000)
+2025-05-18 22:56:26.638 | INFO     | utils.embedding_utils:generate_embedding:25 - Embedding önbellekten alındı.
+2025-05-18 22:56:26.638 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 5 vektör ile karşılaştırılıyor
+2025-05-18 22:56:26.651 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7549 (Eşik: 0.8000)
+2025-05-18 22:56:26.671 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:26.678 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 6 vektör ile karşılaştırılıyor
+2025-05-18 22:56:26.692 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7869 (Eşik: 0.8000)
+2025-05-18 22:56:26.716 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:26.723 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 7 vektör ile karşılaştırılıyor
+2025-05-18 22:56:26.739 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7666 (Eşik: 0.8000)
+2025-05-18 22:56:26.754 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:26.761 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 8 vektör ile karşılaştırılıyor
+2025-05-18 22:56:26.780 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7421 (Eşik: 0.8000)
+2025-05-18 22:56:26.797 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:26.804 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 9 vektör ile karşılaştırılıyor
+2025-05-18 22:56:26.825 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7747 (Eşik: 0.8000)
+2025-05-18 22:56:26.848 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:26.855 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 10 vektör ile karşılaştırılıyor
+2025-05-18 22:56:26.880 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7274 (Eşik: 0.8000)
+2025-05-18 22:56:26.896 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:26.903 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 11 vektör ile karşılaştırılıyor
+2025-05-18 22:56:26.929 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7513 (Eşik: 0.8000)
+2025-05-18 22:56:26.950 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:26.956 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 12 vektör ile karşılaştırılıyor
+2025-05-18 22:56:26.985 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7630 (Eşik: 0.8000)
+2025-05-18 22:56:27.008 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:27.015 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 13 vektör ile karşılaştırılıyor
+2025-05-18 22:56:27.046 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7620 (Eşik: 0.8000)
+2025-05-18 22:56:27.067 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:27.074 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 14 vektör ile karşılaştırılıyor
+2025-05-18 22:56:27.107 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7927 (Eşik: 0.8000)
+2025-05-18 22:56:27.128 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:27.135 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 15 vektör ile karşılaştırılıyor
+2025-05-18 22:56:27.170 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.5546 (Eşik: 0.8000)
+2025-05-18 22:56:27.195 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:27.202 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 16 vektör ile karşılaştırılıyor
+2025-05-18 22:56:27.239 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6585 (Eşik: 0.8000)
+2025-05-18 22:56:27.239 | INFO     | utils.embedding_utils:generate_embedding:25 - Embedding önbellekten alındı.
+2025-05-18 22:56:27.239 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 17 vektör ile karşılaştırılıyor
+2025-05-18 22:56:27.279 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.8211 (Eşik: 0.8000)
+2025-05-18 22:56:27.279 | INFO     | __page__:process_and_add_to_collection:453 - Semantic duplicate detected by embedding and skipped.
+2025-05-18 22:56:27.279 | INFO     | utils.embedding_utils:generate_embedding:25 - Embedding önbellekten alındı.
+2025-05-18 22:56:27.279 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 17 vektör ile karşılaştırılıyor
+2025-05-18 22:56:27.318 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7119 (Eşik: 0.8000)
+2025-05-18 22:56:27.347 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:27.353 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 18 vektör ile karşılaştırılıyor
+2025-05-18 22:56:27.395 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6659 (Eşik: 0.8000)
+2025-05-18 22:56:27.422 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:27.428 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 19 vektör ile karşılaştırılıyor
+2025-05-18 22:56:27.473 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7594 (Eşik: 0.8000)
+2025-05-18 22:56:27.497 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:27.504 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 20 vektör ile karşılaştırılıyor
+2025-05-18 22:56:27.550 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6906 (Eşik: 0.8000)
+2025-05-18 22:56:27.567 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:27.573 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 21 vektör ile karşılaştırılıyor
+2025-05-18 22:56:27.622 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6925 (Eşik: 0.8000)
+2025-05-18 22:56:27.646 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:27.653 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 22 vektör ile karşılaştırılıyor
+2025-05-18 22:56:27.705 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7479 (Eşik: 0.8000)
+2025-05-18 22:56:27.705 | INFO     | utils.embedding_utils:generate_embedding:25 - Embedding önbellekten alındı.
+2025-05-18 22:56:27.705 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 23 vektör ile karşılaştırılıyor
+2025-05-18 22:56:27.758 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7311 (Eşik: 0.8000)
+2025-05-18 22:56:27.781 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:27.788 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 24 vektör ile karşılaştırılıyor
+2025-05-18 22:56:27.844 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7241 (Eşik: 0.8000)
+2025-05-18 22:56:27.863 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:27.869 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 25 vektör ile karşılaştırılıyor
+2025-05-18 22:56:27.927 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7439 (Eşik: 0.8000)
+2025-05-18 22:56:27.949 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:27.956 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 26 vektör ile karşılaştırılıyor
+2025-05-18 22:56:28.016 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7645 (Eşik: 0.8000)
+2025-05-18 22:56:28.037 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:28.043 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 27 vektör ile karşılaştırılıyor
+2025-05-18 22:56:28.106 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6938 (Eşik: 0.8000)
+2025-05-18 22:56:28.131 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:28.138 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 28 vektör ile karşılaştırılıyor
+2025-05-18 22:56:28.203 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6730 (Eşik: 0.8000)
+2025-05-18 22:56:28.224 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:28.231 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 29 vektör ile karşılaştırılıyor
+2025-05-18 22:56:28.298 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6572 (Eşik: 0.8000)
+2025-05-18 22:56:28.318 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:28.325 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 30 vektör ile karşılaştırılıyor
+2025-05-18 22:56:28.394 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7649 (Eşik: 0.8000)
+2025-05-18 22:56:28.416 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:28.422 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 31 vektör ile karşılaştırılıyor
+2025-05-18 22:56:28.494 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7574 (Eşik: 0.8000)
+2025-05-18 22:56:28.516 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:28.523 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 32 vektör ile karşılaştırılıyor
+2025-05-18 22:56:28.597 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7625 (Eşik: 0.8000)
+2025-05-18 22:56:28.597 | INFO     | utils.embedding_utils:generate_embedding:25 - Embedding önbellekten alındı.
+2025-05-18 22:56:28.597 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 33 vektör ile karşılaştırılıyor
+2025-05-18 22:56:28.673 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7248 (Eşik: 0.8000)
+2025-05-18 22:56:28.698 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:28.705 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 34 vektör ile karşılaştırılıyor
+2025-05-18 22:56:28.783 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7545 (Eşik: 0.8000)
+2025-05-18 22:56:28.807 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:28.814 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 35 vektör ile karşılaştırılıyor
+2025-05-18 22:56:28.895 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7733 (Eşik: 0.8000)
+2025-05-18 22:56:28.895 | INFO     | utils.embedding_utils:generate_embedding:25 - Embedding önbellekten alındı.
+2025-05-18 22:56:28.895 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 36 vektör ile karşılaştırılıyor
+2025-05-18 22:56:28.978 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6580 (Eşik: 0.8000)
+2025-05-18 22:56:29.001 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:29.007 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 37 vektör ile karşılaştırılıyor
+2025-05-18 22:56:29.093 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7328 (Eşik: 0.8000)
+2025-05-18 22:56:29.116 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:29.123 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 38 vektör ile karşılaştırılıyor
+2025-05-18 22:56:29.210 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7964 (Eşik: 0.8000)
+2025-05-18 22:56:29.233 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:29.240 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 39 vektör ile karşılaştırılıyor
+2025-05-18 22:56:29.329 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6788 (Eşik: 0.8000)
+2025-05-18 22:56:29.351 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:29.358 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 40 vektör ile karşılaştırılıyor
+2025-05-18 22:56:29.450 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6974 (Eşik: 0.8000)
+2025-05-18 22:56:29.474 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:29.480 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 41 vektör ile karşılaştırılıyor
+2025-05-18 22:56:29.575 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7167 (Eşik: 0.8000)
+2025-05-18 22:56:29.599 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:29.606 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 42 vektör ile karşılaştırılıyor
+2025-05-18 22:56:29.703 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7196 (Eşik: 0.8000)
+2025-05-18 22:56:29.727 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:29.734 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 43 vektör ile karşılaştırılıyor
+2025-05-18 22:56:29.833 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7158 (Eşik: 0.8000)
+2025-05-18 22:56:29.865 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:29.872 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 44 vektör ile karşılaştırılıyor
+2025-05-18 22:56:29.973 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6831 (Eşik: 0.8000)
+2025-05-18 22:56:29.998 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:30.004 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 45 vektör ile karşılaştırılıyor
+2025-05-18 22:56:30.109 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6720 (Eşik: 0.8000)
+2025-05-18 22:56:30.132 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:30.139 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 46 vektör ile karşılaştırılıyor
+2025-05-18 22:56:30.245 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7328 (Eşik: 0.8000)
+2025-05-18 22:56:30.267 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:30.273 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 47 vektör ile karşılaştırılıyor
+2025-05-18 22:56:30.381 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7069 (Eşik: 0.8000)
+2025-05-18 22:56:30.401 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:30.408 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 48 vektör ile karşılaştırılıyor
+2025-05-18 22:56:30.518 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7214 (Eşik: 0.8000)
+2025-05-18 22:56:30.542 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:30.549 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 49 vektör ile karşılaştırılıyor
+2025-05-18 22:56:30.661 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7934 (Eşik: 0.8000)
+2025-05-18 22:56:30.684 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:30.690 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 50 vektör ile karşılaştırılıyor
+2025-05-18 22:56:30.805 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7571 (Eşik: 0.8000)
+2025-05-18 22:56:30.830 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:30.836 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 51 vektör ile karşılaştırılıyor
+2025-05-18 22:56:30.954 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7220 (Eşik: 0.8000)
+2025-05-18 22:56:30.979 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:30.986 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 52 vektör ile karşılaştırılıyor
+2025-05-18 22:56:31.106 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7443 (Eşik: 0.8000)
+2025-05-18 22:56:31.131 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:31.137 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 53 vektör ile karşılaştırılıyor
+2025-05-18 22:56:31.259 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7326 (Eşik: 0.8000)
+2025-05-18 22:56:31.259 | INFO     | utils.embedding_utils:generate_embedding:25 - Embedding önbellekten alındı.
+2025-05-18 22:56:31.259 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 54 vektör ile karşılaştırılıyor
+2025-05-18 22:56:31.382 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7554 (Eşik: 0.8000)
+2025-05-18 22:56:31.407 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:31.413 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 55 vektör ile karşılaştırılıyor
+2025-05-18 22:56:31.540 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7899 (Eşik: 0.8000)
+2025-05-18 22:56:31.564 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:31.571 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 56 vektör ile karşılaştırılıyor
+2025-05-18 22:56:31.700 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7410 (Eşik: 0.8000)
+2025-05-18 22:56:31.724 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:31.730 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 57 vektör ile karşılaştırılıyor
+2025-05-18 22:56:31.861 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6893 (Eşik: 0.8000)
+2025-05-18 22:56:31.862 | INFO     | utils.embedding_utils:generate_embedding:25 - Embedding önbellekten alındı.
+2025-05-18 22:56:31.862 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 58 vektör ile karşılaştırılıyor
+2025-05-18 22:56:31.996 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7918 (Eşik: 0.8000)
+2025-05-18 22:56:31.996 | INFO     | utils.embedding_utils:generate_embedding:25 - Embedding önbellekten alındı.
+2025-05-18 22:56:31.996 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 59 vektör ile karşılaştırılıyor
+2025-05-18 22:56:32.131 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7002 (Eşik: 0.8000)
+2025-05-18 22:56:32.156 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:32.163 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 60 vektör ile karşılaştırılıyor
+2025-05-18 22:56:32.300 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7188 (Eşik: 0.8000)
+2025-05-18 22:56:32.300 | INFO     | utils.embedding_utils:generate_embedding:25 - Embedding önbellekten alındı.
+2025-05-18 22:56:32.300 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 61 vektör ile karşılaştırılıyor
+2025-05-18 22:56:32.439 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7270 (Eşik: 0.8000)
+2025-05-18 22:56:32.463 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:32.469 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 62 vektör ile karşılaştırılıyor
+2025-05-18 22:56:32.612 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6874 (Eşik: 0.8000)
+2025-05-18 22:56:32.634 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:32.641 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 63 vektör ile karşılaştırılıyor
+2025-05-18 22:56:32.785 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7217 (Eşik: 0.8000)
+2025-05-18 22:56:32.809 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:32.816 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 64 vektör ile karşılaştırılıyor
+2025-05-18 22:56:32.962 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7216 (Eşik: 0.8000)
+2025-05-18 22:56:32.984 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:32.991 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 65 vektör ile karşılaştırılıyor
+2025-05-18 22:56:33.151 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7025 (Eşik: 0.8000)
+2025-05-18 22:56:33.175 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:33.182 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 66 vektör ile karşılaştırılıyor
+2025-05-18 22:56:33.333 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6726 (Eşik: 0.8000)
+2025-05-18 22:56:33.357 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:33.364 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 67 vektör ile karşılaştırılıyor
+2025-05-18 22:56:33.518 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7627 (Eşik: 0.8000)
+2025-05-18 22:56:33.542 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:33.549 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 68 vektör ile karşılaştırılıyor
+2025-05-18 22:56:33.705 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7387 (Eşik: 0.8000)
+2025-05-18 22:56:33.737 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:33.744 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 69 vektör ile karşılaştırılıyor
+2025-05-18 22:56:33.907 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7245 (Eşik: 0.8000)
+2025-05-18 22:56:33.931 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:33.938 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 70 vektör ile karşılaştırılıyor
+2025-05-18 22:56:34.101 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6817 (Eşik: 0.8000)
+2025-05-18 22:56:34.125 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:34.132 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 71 vektör ile karşılaştırılıyor
+2025-05-18 22:56:34.296 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7493 (Eşik: 0.8000)
+2025-05-18 22:56:34.329 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:34.336 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 72 vektör ile karşılaştırılıyor
+2025-05-18 22:56:34.504 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7588 (Eşik: 0.8000)
+2025-05-18 22:56:34.531 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:34.539 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 73 vektör ile karşılaştırılıyor
+2025-05-18 22:56:34.714 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7229 (Eşik: 0.8000)
+2025-05-18 22:56:34.714 | INFO     | utils.embedding_utils:generate_embedding:25 - Embedding önbellekten alındı.
+2025-05-18 22:56:34.714 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 74 vektör ile karşılaştırılıyor
+2025-05-18 22:56:34.890 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.8244 (Eşik: 0.8000)
+2025-05-18 22:56:34.890 | INFO     | __page__:process_and_add_to_collection:453 - Semantic duplicate detected by embedding and skipped.
+2025-05-18 22:56:34.914 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:34.921 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 74 vektör ile karşılaştırılıyor
+2025-05-18 22:56:35.091 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7580 (Eşik: 0.8000)
+2025-05-18 22:56:35.115 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:35.121 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 75 vektör ile karşılaştırılıyor
+2025-05-18 22:56:35.292 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7113 (Eşik: 0.8000)
+2025-05-18 22:56:35.316 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:35.322 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 76 vektör ile karşılaştırılıyor
+2025-05-18 22:56:35.495 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7677 (Eşik: 0.8000)
+2025-05-18 22:56:35.518 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:35.524 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 77 vektör ile karşılaştırılıyor
+2025-05-18 22:56:35.700 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7485 (Eşik: 0.8000)
+2025-05-18 22:56:35.700 | INFO     | utils.embedding_utils:generate_embedding:25 - Embedding önbellekten alındı.
+2025-05-18 22:56:35.700 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 78 vektör ile karşılaştırılıyor
+2025-05-18 22:56:35.877 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.8132 (Eşik: 0.8000)
+2025-05-18 22:56:35.877 | INFO     | __page__:process_and_add_to_collection:453 - Semantic duplicate detected by embedding and skipped.
+2025-05-18 22:56:35.900 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:35.906 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 78 vektör ile karşılaştırılıyor
+2025-05-18 22:56:36.084 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7280 (Eşik: 0.8000)
+2025-05-18 22:56:36.109 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:36.115 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 79 vektör ile karşılaştırılıyor
+2025-05-18 22:56:36.296 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7162 (Eşik: 0.8000)
+2025-05-18 22:56:36.318 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:36.325 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 80 vektör ile karşılaştırılıyor
+2025-05-18 22:56:36.508 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7087 (Eşik: 0.8000)
+2025-05-18 22:56:36.532 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:36.539 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 81 vektör ile karşılaştırılıyor
+2025-05-18 22:56:36.724 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.7099 (Eşik: 0.8000)
+2025-05-18 22:56:36.749 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:36.756 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 82 vektör ile karşılaştırılıyor
+2025-05-18 22:56:36.945 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6647 (Eşik: 0.8000)
+2025-05-18 22:56:36.967 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:36.974 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 83 vektör ile karşılaştırılıyor
+2025-05-18 22:56:37.165 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.6844 (Eşik: 0.8000)
+2025-05-18 22:56:37.189 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:37.196 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 84 vektör ile karşılaştırılıyor
+2025-05-18 22:56:37.387 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 1.0000 (Eşik: 0.8000)
+2025-05-18 22:56:37.387 | INFO     | __page__:process_and_add_to_collection:453 - Semantic duplicate detected by embedding and skipped.
+2025-05-18 22:56:37.412 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:56:37.419 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 84 vektör ile karşılaştırılıyor
+2025-05-18 22:56:37.611 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 1.0000 (Eşik: 0.8000)
+2025-05-18 22:56:37.611 | INFO     | __page__:process_and_add_to_collection:453 - Semantic duplicate detected by embedding and skipped.
+2025-05-18 22:56:37.611 | INFO     | utils.embedding_utils:generate_embedding:25 - Embedding önbellekten alındı.
+2025-05-18 22:56:37.611 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:45 - Embedding tabanlı duplikasyon kontrolü: 84 vektör ile karşılaştırılıyor
+2025-05-18 22:56:37.803 | INFO     | utils.duplicate_utils:is_duplicate_by_embedding:49 - En yüksek benzerlik skoru: 0.9692 (Eşik: 0.8000)
+2025-05-18 22:56:37.803 | INFO     | __page__:process_and_add_to_collection:453 - Semantic duplicate detected by embedding and skipped.
+2025-05-18 22:56:37.815 | INFO     | utils.collection_utils:create_or_update_collection:24 - 84 belge version_03 koleksiyonuna eklendi.
+2025-05-18 22:56:47.083 | INFO     | __page__:<module>:31 - Adaptive-RAG system enabled.
+2025-05-18 22:56:47.105 | INFO     | __page__:<module>:40 - FUNNELRAG (Two-Stage Retrieval) system enabled.
+2025-05-18 22:56:47.105 | INFO     | __page__:<module>:49 - Binary Quantization system enabled.
+2025-05-18 22:56:47.105 | INFO     | __page__:<module>:64 - Cached RAG system enabled.
+2025-05-18 22:57:13.273 | INFO     | __page__:<module>:31 - Adaptive-RAG system enabled.
+2025-05-18 22:57:13.295 | INFO     | __page__:<module>:40 - FUNNELRAG (Two-Stage Retrieval) system enabled.
+2025-05-18 22:57:13.295 | INFO     | __page__:<module>:49 - Binary Quantization system enabled.
+2025-05-18 22:57:13.295 | INFO     | __page__:<module>:64 - Cached RAG system enabled.
+2025-05-18 22:57:14.135 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:57:14.150 | INFO     | utils.hash_utils:load_chunks_from_jsonl:93 - 84 chunk yüklendi: db/collections/version_03/documents.jsonl
+2025-05-18 22:57:14.167 | INFO     | utils.funnel_rag:_build_tfidf_index:106 - TF-IDF indeksi oluşturuldu: 84 dokuman, 1014 terim
+2025-05-18 22:57:14.167 | DEBUG    | utils.embedding_utils:get_top_k_chunks:147 - FUNNELRAG kullanılamadı: 'NoneType' object has no attribute 'lower'
+2025-05-18 22:57:14.179 | INFO     | utils.embedding_utils:get_top_k_chunks:198 - Top-5 chunks filtrelendi: 5 chunk seçildi (min benzerlik: 0.3)
+2025-05-18 22:57:14.190 | INFO     | utils.adaptive_rag:get_adaptive_context_size:149 - Adaptive-RAG: Sorgu karmaşıklığı "basit" için maksimum bağlam boyutu: 7500 karakter
+2025-05-18 22:57:14.190 | INFO     | utils.embedding_utils:prepare_context_for_llm:334 - Adaptive-RAG: Dinamik olarak ayarlanan bağlam boyutu: 7500 karakter
+2025-05-18 22:57:15.727 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:57:15.826 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:57:15.836 | INFO     | utils.embedding_utils:distill_chunk:287 - Damıtma sonrası benzerlik: 0.8095, Boyut: 570 → 381 karakter
+2025-05-18 22:57:17.918 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:57:17.997 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:57:18.007 | INFO     | utils.embedding_utils:distill_chunk:287 - Damıtma sonrası benzerlik: 0.8325, Boyut: 886 → 469 karakter
+2025-05-18 22:57:20.582 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:57:20.609 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:57:20.618 | INFO     | utils.embedding_utils:distill_chunk:287 - Damıtma sonrası benzerlik: 0.9081, Boyut: 1431 → 742 karakter
+2025-05-18 22:57:23.940 | INFO     | utils.embedding_utils:generate_embedding:25 - Embedding önbellekten alındı.
+2025-05-18 22:57:24.057 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:57:24.068 | INFO     | utils.embedding_utils:distill_chunk:287 - Damıtma sonrası benzerlik: 0.7511, Boyut: 919 → 562 karakter
+2025-05-18 22:57:26.161 | INFO     | utils.embedding_utils:generate_embedding:25 - Embedding önbellekten alındı.
+2025-05-18 22:57:26.287 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:57:26.297 | INFO     | utils.embedding_utils:distill_chunk:287 - Damıtma sonrası benzerlik: 0.8092, Boyut: 1014 → 613 karakter
+2025-05-18 22:57:26.297 | INFO     | utils.embedding_utils:distill_chunks:320 - 5 chunk damıtıldı.
+2025-05-18 22:57:26.297 | INFO     | utils.embedding_utils:prepare_context_for_llm:377 - Optimizasyon sonrası bağlam boyutu: 2837 karakter
+2025-05-18 22:57:26.313 | INFO     | utils.rcot_reflection:generate_initial_response:127 - [RESPONSE_GENERATION] Gemini'ye istek gönderiliyor.
+Prompt uzunluğu: 2981 karakter
+Model: gemini-2.0-flash-lite
+API_KEY: AIzaSy***
+2025-05-18 22:57:32.546 | INFO     | utils.rcot_reflection:generate_initial_response:133 - [RESPONSE_GENERATION] Gemini'den dönen yanıt uzunluğu: 2157 karakter
+2025-05-18 22:58:26.662 | INFO     | __page__:<module>:31 - Adaptive-RAG system enabled.
+2025-05-18 22:58:26.685 | INFO     | __page__:<module>:40 - FUNNELRAG (Two-Stage Retrieval) system enabled.
+2025-05-18 22:58:26.685 | INFO     | __page__:<module>:49 - Binary Quantization system enabled.
+2025-05-18 22:58:26.685 | INFO     | __page__:<module>:64 - Cached RAG system enabled.
+2025-05-18 22:58:27.392 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:58:27.406 | INFO     | utils.hash_utils:load_chunks_from_jsonl:93 - 84 chunk yüklendi: db/collections/version_03/documents.jsonl
+2025-05-18 22:58:27.424 | INFO     | utils.funnel_rag:_build_tfidf_index:106 - TF-IDF indeksi oluşturuldu: 84 dokuman, 1014 terim
+2025-05-18 22:58:27.424 | DEBUG    | utils.embedding_utils:get_top_k_chunks:147 - FUNNELRAG kullanılamadı: 'NoneType' object has no attribute 'lower'
+2025-05-18 22:58:27.437 | INFO     | utils.embedding_utils:get_top_k_chunks:198 - Top-5 chunks filtrelendi: 5 chunk seçildi (min benzerlik: 0.3)
+2025-05-18 22:58:27.453 | INFO     | utils.adaptive_rag:get_adaptive_context_size:149 - Adaptive-RAG: Sorgu karmaşıklığı "orta" için maksimum bağlam boyutu: 15000 karakter
+2025-05-18 22:58:27.453 | INFO     | utils.embedding_utils:prepare_context_for_llm:334 - Adaptive-RAG: Dinamik olarak ayarlanan bağlam boyutu: 15000 karakter
+2025-05-18 22:58:29.064 | INFO     | utils.embedding_utils:generate_embedding:25 - Embedding önbellekten alındı.
+2025-05-18 22:58:29.211 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:58:29.221 | WARNING  | utils.embedding_utils:distill_chunk:284 - Damıtılmış metin orijinaliyle yeterince benzer değil (0.6571). Orijinal metin kullanılıyor.
+2025-05-18 22:58:31.473 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:58:31.501 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:58:31.510 | INFO     | utils.embedding_utils:distill_chunk:287 - Damıtma sonrası benzerlik: 0.8179, Boyut: 1036 → 611 karakter
+2025-05-18 22:58:36.989 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:58:37.033 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:58:37.042 | INFO     | utils.embedding_utils:distill_chunk:287 - Damıtma sonrası benzerlik: 0.7998, Boyut: 527 → 384 karakter
+2025-05-18 22:58:39.117 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:58:39.143 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:58:39.153 | INFO     | utils.embedding_utils:distill_chunk:287 - Damıtma sonrası benzerlik: 0.9027, Boyut: 1431 → 576 karakter
+2025-05-18 22:58:42.497 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:58:42.524 | INFO     | utils.embedding_utils:generate_embedding:48 - Embedding üretildi.
+2025-05-18 22:58:42.533 | INFO     | utils.embedding_utils:distill_chunk:287 - Damıtma sonrası benzerlik: 0.7697, Boyut: 724 → 327 karakter
+2025-05-18 22:58:42.533 | INFO     | utils.embedding_utils:distill_chunks:320 - 5 chunk damıtıldı.
+2025-05-18 22:58:42.533 | INFO     | utils.embedding_utils:prepare_context_for_llm:377 - Optimizasyon sonrası bağlam boyutu: 2875 karakter
+2025-05-18 22:58:42.548 | INFO     | utils.rcot_reflection:generate_initial_response:127 - [RESPONSE_GENERATION] Gemini'ye istek gönderiliyor.
+Prompt uzunluğu: 3106 karakter
+Model: gemini-2.0-flash-lite
+API_KEY: AIzaSy***
+2025-05-18 22:58:47.350 | INFO     | utils.rcot_reflection:generate_initial_response:133 - [RESPONSE_GENERATION] Gemini'den dönen yanıt uzunluğu: 1106 karakter
+2025-05-18 22:59:56.436 | INFO     | __page__:<module>:31 - Adaptive-RAG system enabled.
+2025-05-18 22:59:56.451 | INFO     | __page__:<module>:40 - FUNNELRAG (Two-Stage Retrieval) system enabled.
+2025-05-18 22:59:56.459 | INFO     | __page__:<module>:49 - Binary Quantization system enabled.
+2025-05-18 22:59:56.484 | INFO     | utils.cache_utils:_load_cache_from_disk:121 - Önbellek verileri diskten yüklendi. Toplam: 239 embedding, 10 retrieval, 14 context, 10 response.
+2025-05-18 22:59:56.484 | INFO     | utils.cache_utils:init_cache:216 - Cached RAG sistemi başlatıldı.
+2025-05-18 22:59:56.484 | INFO     | __page__:<module>:64 - Cached RAG system enabled.
+2025-05-18 23:04:15.884 | INFO     | __page__:<module>:31 - Adaptive-RAG system enabled.
+2025-05-18 23:04:15.898 | INFO     | __page__:<module>:40 - FUNNELRAG (Two-Stage Retrieval) system enabled.
+2025-05-18 23:04:15.906 | INFO     | __page__:<module>:49 - Binary Quantization system enabled.
+2025-05-18 23:04:15.925 | INFO     | utils.cache_utils:_load_cache_from_disk:121 - Önbellek verileri diskten yüklendi. Toplam: 239 embedding, 10 retrieval, 14 context, 10 response.
+2025-05-18 23:04:15.926 | INFO     | utils.cache_utils:init_cache:216 - Cached RAG sistemi başlatıldı.
+2025-05-18 23:04:15.926 | INFO     | __page__:<module>:64 - Cached RAG system enabled.

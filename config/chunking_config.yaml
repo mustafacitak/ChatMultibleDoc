@@ -1,0 +1,71 @@
+chunking:
+  type: sentence   # 'sentence' veya 'word'
+  chunk_size: 5
+  overlap: 0
+  duplicate_threshold: 0.80
+  top_k: 5
+  min_similarity_threshold: 0.3  # En az bu benzerlikte olan chunk'lar kullanılacak
+  max_context_size: 15000  # Maksimum bağlam boyutu (karakter)
+
+context_optimization:
+  enabled: true  # Bağlam optimizasyonu aktif/pasif
+  compress_context: true  # Bağlamı sıkıştırma aktif/pasif
+  reuse_context: true  # Aynı bağlamı tekrar tekrar göndermek yerine referansla kullanma
+  progressive_context: true  # İleri aşamalarda daha az bağlam kullanma
+  distillation:
+    enabled: true  # Context Distillation aktif/pasif
+    preserve_ratio: 0.7  # Orijinal içeriğin ne kadarının korunacağı (0.7 = %70)
+    check_similarity: true  # Damıtılmış içeriğin orijinaliyle benzerlik kontrolü yapılsın mı
+
+# Adaptive-RAG konfigürasyonu
+adaptive_rag:
+  enabled: true  # Adaptive-RAG aktif/pasif
+  simple_query_top_k: 3  # Basit sorgular için chunk sayısı
+  medium_query_top_k: 5  # Orta karmaşıklıktaki sorgular için chunk sayısı
+  complex_query_top_k: 8  # Karmaşık sorgular için chunk sayısı
+  adaptive_context_sizing: true  # Sorgu karmaşıklığına göre bağlam boyutunu ayarlama
+  simple_context_size: 7500  # Basit sorgular için bağlam boyutu
+  medium_context_size: 15000  # Orta karmaşıklıktaki sorgular için bağlam boyutu
+  complex_context_size: 20000  # Karmaşık sorgular için bağlam boyutu
+
+# FUNNELRAG konfigürasyonu (İki Aşamalı Retrieval)
+funnel_rag:
+  enabled: true  # FUNNELRAG aktif/pasif
+  coarse_candidate_count: 100  # İlk aşamada seçilecek aday sayısı
+  use_tfidf: true  # TF-IDF kullan
+  use_keyword: true  # Anahtar kelime benzerliği kullan
+  fine_candidate_ratio: 0.3  # İkinci aşamaya geçecek adayların oranı
+
+# Binary Quantization konfigürasyonu
+binary_quantization:
+  enabled: true  # Binary quantization aktif/pasif
+  use_packing: true  # 8 biti tek byte'a sıkıştırma
+  hybrid_ratio: 0.2  # Hibrit mod oranı (0: sadece binary, 1: sadece orijinal)
+  # 0.2 değeri, %80 binary + %20 orijinal vektör kullanımı anlamına gelir
+  # Bu, %20 recall kaybını önlerken, hızlı binary benzerlik hesabı avantajını korur
+
+cached_rag:
+  enabled: true  # Cached RAG aktif/pasif
+  cache_timeout: 86400  # Önbellek geçerlilik süresi (saniye) - 24 saat
+  similarity_threshold: 0.92  # Önbellekten yanıt vermek için gereken minimum benzerlik eşiği
+  cache_levels:
+    embedding: true  # Embedding önbellekleme (aynı metin için tekrar embedding üretmeyi önler)
+    retrieval: true  # Retrieval sonuçlarını önbellekleme (benzer sorgular için aynı chunk'ları döndürür)
+    context: true  # Context önbellekleme (benzer sorgular için distillation'ı tekrarlamaz)
+    response: true  # Yanıt önbellekleme (benzer sorgular için LLM çağrısını tekrarlamaz)
+  semantic_cache: true  # Anlamsal önbellekleme (birebir eşleşme yerine benzerlik tabanlı önbellekleme)
+  max_cache_items: 10000  # Önbellekte tutulacak maksimum öğe sayısı
+  min_hit_rate: 0.3  # Minimum önbellek isabet oranı (bu oranın altında düşerse önbellek sıfırlanır)
+
+gemini:
+  model_name: "gemini-2.0-flash-lite"  # Kullanılacak model adı
+  temperature:
+    query_enrichment: 0.4  # Sorgu zenginleştirme için temperature
+    response_generation: 0.1  # Yanıt üretimi için temperature
+    reasoning_steps: 0.1  # Akıl yürütme adımları için temperature
+    validation: 0.1  # Doğrulama için temperature
+    distillation: 0.2  # Context Distillation için temperature
+
+app:
+  default_collection: "ornek_koleksiyon"  # Varsayılan koleksiyon adı
+  collections_path: "db/collections"  # Koleksiyonların saklanacağı dizin 

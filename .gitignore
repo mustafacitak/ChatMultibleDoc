@@ -1,8 +1,108 @@
+# .env dosyasını Git'e dahil etme
 .env
-.streamlit/
-.pkl
-vector_base.pkl
-.venv
+
+# Git'e dahil edilmeyecek dosyalar ve klasörler
+
+# Ortam değişkenleri ve gizli anahtarlar
+*.env
+.env.*
+*.pem
+*.key
+
+# Veritabanı klasörleri
+/db/
+*/db/
+**/db/
+*.db
+*.sqlite3
+**/chroma.sqlite3
+
+# Python sanal ortam klasörleri
+venv/
+.venv/
+virtualenv/
+*venv/
+*virtualenv/
+ENV/
+env/
+python-env/
+
+# Python ve cache ile ilgili
 __pycache__/
-.DS_Store
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE klasörleri
 .idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Log dosyaları
+*.log
+logs/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore IDE/editor folders and files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+
+# Ignore test and coverage outputs
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Ignore macOS, Windows, Linux system files
+*.DS_Store
+*.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Ignore temporary files
+*.tmp
+*.bak
+*.old
+*.orig
+*.pid
+
+# Ignore notebook output
+*.nbconvert.ipynb
