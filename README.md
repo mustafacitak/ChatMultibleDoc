@@ -63,7 +63,7 @@
 - **Config-driven**: All important parameters are read from YAML files.
 - **RAG (Retrieval-Augmented Generation)**: Information retrieval from documents and answer generation with LLM.
 
-### 1.4. Language, Framework, and Libraries Used
+### 1.4. Language, Framework, and Libraries Useda
 
 - **Language**: Python 3
 - **Main Framework**: Streamlit (web interface)
