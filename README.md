@@ -69,7 +69,7 @@
 - **Main Framework**: Streamlit (web interface)
 - **LLM and Embedding**: sentence-transformers, google-generativeai, LangChain
 - **Data Processing**: pandas, numpy, PyPDF2, python-docx, paddleocr, PIL, PyMuPDF
-- **Helpers**: loguru (logging), python-dotenv (env management), pyyaml (yaml reading), requests, aiohttp, bs4
+- **Helpers**: loguru (logging), python-dotenv (env management), pyyaml (yaml reading), requests, aiohttp, bs4a
 - **Search and Vector DB**: typesense, meilisearch, opensearch-py, pyarrow
 
 ## User Interface Screenshots
